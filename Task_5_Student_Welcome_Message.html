@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MKn5NWVBEuQXJE7TSKSgPUmMiSCmVTfCsR+VSSeQpHnoyJQZZFn/kBn+Ht5jZDPQ" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-+PW0IDVGGwmpaBQvcXY+W0BcpHpITFB3dSfSoGvDdHtLbrLpSbpGcvtQRM/BJpz+" crossorigin="anonymous"></script>    
+    <title>Student Welcome Message</title>
+    <script>
+        function btnClick(){
+            document.getElementById("welcomeTitle").innerHTML="Welcome to JavaScript Lab!";
+            document.getElementById("welcomeMessage").textContent ="Start learning DOM manipulation today." ;
+        }
+    </script>
+</head>
+<body class="bg-white m-5">
+    <h2 id="welcomeTitle" class="text-primary"></h2>
+    <p id="welcomeMessage" class="text-warning"></p>
+    <button onclick="btnClick()" class="btn bg-warning text-black">Show Welcome</button>
+</body>
+</html>
